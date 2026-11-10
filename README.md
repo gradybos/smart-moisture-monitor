@@ -7,7 +7,7 @@ Every time I try to take care of a plant, I find myself unsure of when to water 
 
 ## Demo
 
-[Finished device]
+![Assembled PCB](./images/pcbaphysical.png)
 [Device in plant]
 [App screenshot]
 [Video demo?]
