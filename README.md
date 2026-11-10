@@ -28,7 +28,7 @@ Here, the GATT service is demonstrated. From the app, the user can check whether
 The design consists of 3 components: a XIAO nRF52840 microcontroller, a Soldered capacitive soil moisture sensor, and an Adafruit coin cell battery holder. 
 
 [Image of product]
-[Product link]
+[[Product link]](https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/102010632/26553897?so=101749953&content=productdetail_row&mkt_tok=MDI4LVNYSy01MDcAAAGkY9oCX9iygtz4pVAQxpqr9ZmE4g0C6yautcUlOLW5aC9xsgBlqE6x3ocl_qvb9IpdeQ0vp1-dXrSFhxRcrpanjOP8NQ_jjrDhp60iZ-v--p0)
 The XIAO microcontroller was selected because of its built-in BLE capabilities, ultra low power consumption, and cheap price. 
 
 [Image of product]
