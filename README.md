@@ -8,12 +8,16 @@ Every time I try to take care of a plant, I find myself unsure of when to water 
 ## Demo
 
 ![Assembled PCB](./images/pcbaphysical.png)
+
 This is the final assembled PCB.
 ![Device in plant](./images/devicefinal.png)
+
 This shows the device embedded in a plant's soil.
 ![Scanner](./images/scanner.png)
+
 The scanner is part of the nRF Connect app, which is used to connect to the device via Bluetooth. From this app, the GATT services and characteristics can be observed.
 ![GATT service](./images/gattservice.png)
+
 Here, the GATT service is demonstrated. From the app, the user can check whether they have notifications enabled, and see the current soil moisture reading as a percentage (48% in this example). A moisture around 50% is optimal, since 0% indicates that the plant is underwatered and 100% indicates that the soil is saturated.
 
 ## Components
