@@ -56,17 +56,17 @@ In fact, the firmware could be designed in sections to work with each component 
 
 ## Battery Estimate
 
-\[
+$$
 \text{Charge}_{\text{daily}} =
 (10 \times 0.2) +
 (0.1 \times 23.8) +
 (0.0005 \times 23.8) +
 (5 \times 0.004)
-\]
+$$
 
-\[
+$$
 \boxed{\text{Charge}_{\text{daily}} = 4.52\ \text{mAh/day}}
-\]
+$$
 
 The above equation shows how the device's power consumption for a day was estimated. This assumes that the device is actively transmitting sensor readings for 12 minutes a day, which is more than likely an overestimate as the readings arrive within seconds. 
 
