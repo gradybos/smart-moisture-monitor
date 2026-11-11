@@ -40,9 +40,15 @@ The coin cell battery holder was necessary to supply the device with power, enab
 
 ![Hardware Schematic](./images/schematic.png)
 
+This is the schematic used to create the PCB layout. The soil moisture sensor is represented by a 3-pin connector and the battery holder is represented by a 4-pin connector.
+
 ![PCB Layout](./images/pcblayout.png)
 
+Here, the full PCB layout is shown. KiCad has an incredible built in tool to convert schematics directly to PCB layouts. It lays the components down, but the routing, edge cuts, additional markings on the mask, and other features must be added manually.
+
 ![PCB 3D View](./images/3dmodel.png)
+
+Another great feature included in KiCad is the built in 3D model viewer that allows the user to easily visualize their finished PCB product. The resulting output for the PCB designed by me is shown above.
 
 [Firmware Architecture image (state machine)]
 
