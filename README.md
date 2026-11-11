@@ -50,15 +50,17 @@ Here, the full PCB layout is shown. KiCad has an incredible built in tool to con
 
 Another great feature included in KiCad is the built in 3D model viewer that allows the user to easily visualize their finished PCB product. The resulting output for the PCB designed by me is shown above.
 
-[Firmware Architecture image (state machine)]
+![Firmware Architecture image](./images/firmwarearchitecture.png)
+
+The above flow chart outlines the state machine implemented within the firmware. While there is no active BLE connection, the device begins advertising and the CPU sleeps. Once a connection is established, the device polls the moisture sensor reading every 10 seconds, converts the analog reading to a percentage, and sends this value over a GATT service to the nRF Connect app. If the device disconnects, it goes back to advertising and the CPU goes back to low-power mode.
 
 ## Challenges Faced
 
 This project required me to learn many new technologies in order to assemble everything. One of the biggest roadblocks I faced was settling on a design when I had little experience working with BLE or ULP devices. Ultimately, I opted to keep the hardware simple and focus more on gaining depth in my software knowledge. This made it easier to test each component individually, allowing me to minimize potential points of failure while designing the firmware for the device. 
 
-[Flow chart of testing stages]
+![Flow chart of testing stages](./images/testing.png)
 
-In fact, the firmware could be designed in sections to work with each component before combining everything together. Specifically, I loaded a sample blink program onto the microcontroller, modified a sample BLE button notification program to work with my hardware, modified a USB serial monitor example to verify the soil moisture sensor readings, and tested powering the device using the battery rather than the USB cable. Isolating components and gradually building up towards the completed final product made the task of learning many new technologies more manageable.
+In fact, the firmware could be designed in sections to work with each component before combining everything together. The overall testing process is outlined in the above flowchart. I loaded a sample blink program onto the microcontroller, modified a sample BLE button notification program to work with my hardware, modified a USB serial monitor example to verify the soil moisture sensor readings, and tested powering the device using the battery rather than the USB cable. Isolating components and gradually building up towards the completed final product made the task of learning many new technologies more manageable.
 
 ## Battery Estimate
 
